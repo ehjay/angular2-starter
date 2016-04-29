@@ -1,4 +1,4 @@
-import { Component } from 'angular2/core';
+import { Component, Input } from 'angular2/core';
 
 @Component({
   selector: 'rio-comment-list',
@@ -12,9 +12,5 @@ import { Component } from 'angular2/core';
   `
 })
 export class RioCommentList {
-  comments: string[] = [
-    'What a lovely day',
-    'Those green pants look very sharp',
-    'I\'m a comment!'
-  ]
+  @Input() comments: string[];
 };

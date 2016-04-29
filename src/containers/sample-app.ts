@@ -9,7 +9,7 @@ import { RouteConfig, ROUTER_DIRECTIVES } from 'angular2/router';
 
 import { RioAboutPage } from './about-page';
 import { RioCounterPage } from './counter-page';
-import { RioCommentsPage } from './comments-page';
+import { RioCommentPage } from './comment-page';
 
 import {
   RioContainer,
@@ -68,7 +68,7 @@ import {
   {
     path: '/comments',
     name: 'Comments',
-    component: RioCommentsPage
+    component: RioCommentPage
   }
 ])
 export class RioSampleApp {
