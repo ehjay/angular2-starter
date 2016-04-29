@@ -28,3 +28,6 @@ typings/
 
 *.js.map
 src/**/*.js
+
+# Vim
+*.swp
