@@ -37,11 +37,11 @@ import {
           <a [routerLink]="['Counter']"
             class="text-decoration-none">Counter</a>
         </rio-navigator-item>
-        <rio-navigator-item>
+        <rio-navigator-item [mr]=true>
           <a [routerLink]="['About']"
             class="text-decoration-none">About Us</a>
         </rio-navigator-item>
-        <rio-navigator-item [mr]=true>
+        <rio-navigator-item>
           <a [routerLink]="['Comments']"
             class="text-decoration-none">Comments</a>
         </rio-navigator-item>
