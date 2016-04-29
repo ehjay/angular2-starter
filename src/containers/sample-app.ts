@@ -9,6 +9,7 @@ import { RouteConfig, ROUTER_DIRECTIVES } from 'angular2/router';
 
 import { RioAboutPage } from './about-page';
 import { RioCounterPage } from './counter-page';
+import { RioCommentsPage } from './comments-page';
 
 import {
   RioContainer,
@@ -40,6 +41,10 @@ import {
           <a [routerLink]="['About']"
             class="text-decoration-none">About Us</a>
         </rio-navigator-item>
+        <rio-navigator-item [mr]=true>
+          <a [routerLink]="['Comments']"
+            class="text-decoration-none">Comments</a>
+        </rio-navigator-item>
         <div class="flex flex-auto"></div>
       </rio-navigator>
       <rio-container>
@@ -59,6 +64,11 @@ import {
     path: '/about',
     name: 'About',
     component: RioAboutPage
+  },
+  {
+    path: '/comments',
+    name: 'Comments',
+    component: RioCommentsPage
   }
 ])
 export class RioSampleApp {
