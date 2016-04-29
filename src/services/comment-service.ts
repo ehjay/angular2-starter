@@ -1,9 +1,9 @@
 export class CommentService {
 
-  public comments: string[] = [
-    'What a lovely day',
-    'Those green pants look very sharp',
-    'I\'m a comment!'
+  public comments: any[] = [
+    { author: 'joe', text: 'oh hello' },
+    { author: 'mary', text: 'it\'s scary' },
+    { author: 'alfred', text: 'I don\'t have a rhyme' }
   ];
 
   addComment() {
