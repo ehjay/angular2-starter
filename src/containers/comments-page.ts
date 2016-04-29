@@ -7,10 +7,16 @@ import { RioContainer } from '../components';
   template: `
     <rio-container>
       <h2 class="caps">Comments</h2>
-      <p>
-        Comments go here
-      </p>
+      <div *ngFor='#comment of comments'>
+        {{ comment }}
+      </div>
     </rio-container>
   `
 })
-export class RioCommentsPage {}
+export class RioCommentsPage {
+  comments: string[] = [
+    "What a lovely day",
+    "Those green pants look very sharp",
+    "I'm a comment!"
+  ]
+}
